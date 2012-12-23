@@ -1,22 +1,24 @@
-# Starbucks - Find them.
+= Starbucks - Find them.
 
 This gem allows you to find the nearest Starbucks from a lat/lon.  This gem may stop functioning at any time without warning because the API that it uses is not published or public.  Please see the LICENSE.txt file for more information.
 
-## Installation
+== Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'starbucks'
+  gem 'starbucks'
 
 And then execute:
 
-    $ bundle
+  $ bundle
 
 Or install it yourself as:
 
-    $ gem install starbucks
+  $ gem install starbucks
 
-## Usage
+== Usage
+
+To use:
 
   require 'starbucks'
 
