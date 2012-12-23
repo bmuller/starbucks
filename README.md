@@ -1,0 +1,37 @@
+# Starbucks - Find them.
+
+This gem allows you to find the nearest Starbucks from a lat/lon.  This gem may stop functioning at any time without warning because the API that it uses is not published or public.  Please see the LICENSE.txt file for more information.
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+    gem 'starbucks'
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install starbucks
+
+## Usage
+
+  require 'starbucks'
+
+  # Get the nearest:
+  Starbucks.find_nearest(38.8903694152832, -77.0319595336914) { |bucks|
+    puts bucks.name
+    puts bucks.address
+  }
+
+  # Alternative form
+  bucks = Starbucks.find_nearest(38.8903694152832, -77.0319595336914)
+  puts bucks.name
+  puts bucks.address
+
+  # Get the nearest 30 and print out all their attributes (there's a bunch, which I won't list here)
+  Starbucks.find(lat, lon).each { |bucks|
+    puts bucks
+  }
