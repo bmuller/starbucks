@@ -26,12 +26,14 @@ To use:
   Starbucks.find_nearest(38.8903694152832, -77.0319595336914) { |bucks|
     puts bucks.name
     puts bucks.address
+    puts bucks.miles_away
   }
 
   # Alternative form
   bucks = Starbucks.find_nearest(38.8903694152832, -77.0319595336914)
   puts bucks.name
   puts bucks.address
+  puts bucks.miles_away
 
   # Get the nearest 30 and print out all their attributes (there's a bunch, which I won't list here)
   Starbucks.find(lat, lon).each { |bucks|
